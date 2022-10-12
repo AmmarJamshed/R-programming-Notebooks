@@ -1,0 +1,102 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+
+plot(1:10)
+"Hello World!"
+5 + 5
+my_var <- 30 # my_var is type of numeric
+my_var <- "Sally" # my_var is now of type character (aka string)
+my_var
+
+# numeric
+a <- 10.5
+class(a)
+
+# integer
+b <- 1000L
+class(b)
+
+# complex
+c <- 9i + 3
+class(c)
+
+# character/string
+d <- "R is exciting"
+class(d)
+
+# logical/boolean
+e <- TRUE
+class(e)
+
+# Function
+a <- 33
+b <- 200
+
+if (b > a) {
+  print("b is greater than a")
+}
+# function 2
+if (b > a) {
+  print("b is greater than a")
+} else if (a == b) {
+  print ("a and b are equal")
+}
+
+# function 3
+if (b > a) {
+  print("b is greater than a")
+} else if (a == b) {
+  print("a and b are equal")
+} else {
+  print("a is greater than b")
+}
+# nested if statements
+x <- 41
+
+if (x > 10) {
+  print("Above ten")
+  if (x > 20) {
+    print("and also above 20!")
+  } else {
+    print("but not above 20.")
+  }
+} else {
+  print("below 10.")
+}
+# AND
+a <- 200
+b <- 33
+c <- 50
+
+if (a > b & c > a) {
+  print("Both conditions are true")
+} else {
+  print("Shut it")
+}
+# OR
+a <- 200
+b <- 33
+c <- 50
+
+if (a > b | a > c) {
+  print("At least one of the conditions is true")
+}  else { 
+  print("Between the two")
+}
